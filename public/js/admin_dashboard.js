@@ -27,23 +27,26 @@ $(document).ready(function () {
 function darkMode() {
     $('body').toggleClass('dark-mode');
     $('.table tr:nth-child(even)').css({
-        'background-color': '#999',
-        'color': '#555',
+        'background-color': '#333',
+        'color': '#fff',
     })
     $('.table tr:nth-child(1)').css({
-        'background-color': '#777',
-        'color': '#555',
+        'background-color': '#555',
+        'color': '#fff',
+    })
+    $('.left_sidebar .menu_items .menu_item').css({
+        'color': '#fff',
     })
 
-    $('.main_content .main_navbar .dark_mode_icon .bx-sun').click(function () {
+    $('.main_content .main_navbar .dark_mode_icon .bx-sun .table').click(function () {
         $(this).css('display', 'none');
-        $('.main_content .main_navbar .dark_mode_icon .bx-moon').css('display', 'block');
+        $('.main_content .main_navbar .dark_mode_icon .bx-moon .table').css('display', 'block');
     });
 
-    $('.main_content .main_navbar .dark_mode_icon .bx-moon').click(function () {
-        $(this).css('display', 'none');
-        $('.main_content .main_navbar .dark_mode_icon .bx-sun').css('display', 'block');
-    });
+    // $('.main_content .main_navbar .dark_mode_icon .bx-moon').click(function () {
+    //     $(this).css('display', 'none');
+    //     $('.main_content .main_navbar .dark_mode_icon .bx-sun').css('display', 'block');
+    // });
 }
 
 jQuery(document).ready(function (e) {
